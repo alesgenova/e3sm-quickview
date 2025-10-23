@@ -1,4 +1,4 @@
-name: "Initiate Release"
+name: "Release"
 on:
   workflow_dispatch:  # manually triggered
 
