@@ -68,6 +68,9 @@ quickview = "e3sm_quickview.app2:main"
 "e3sm_quickview/plugins/*.py" = ["F403", "F405"]
 "e3sm_quickview/pipeline.py" = ["F821"]  # Plugin classes loaded dynamically
 
+[tool.semantic_release.branches.auto-release]
+match = "auto-release"
+
 [tool.semantic_release]
 version_toml = [
     "pyproject.toml:project.version",
