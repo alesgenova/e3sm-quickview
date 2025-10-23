@@ -52,7 +52,7 @@ jobs:
       - name: Install dependencies and get version
         run: |
           python -m pip install --upgrade pip
-          pip install .  # Assumes installable via setup.py or pyproject.toml
+          pip install .[tauri]  # Assumes installable via setup.py or pyproject.toml
           # Now we can read the version
           VERSION=$(python -c "from e3sm_quickview import __version__; print(__version__)")
           echo "VERSION=$VERSION" >> $GITHUB_ENV
