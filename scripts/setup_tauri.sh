@@ -19,7 +19,7 @@ python -m PyInstaller --clean --noconfirm \
         --collect-all paraview \
         --collect-all e3sm_quickview \
         --hidden-import pkgutil \
-        --add-binary="C:\Miniconda3\envs\quickview\Library\bin\pvpython:."  \
+        --add-binary="C:\Miniconda3\envs\quickview\Library\bin\pvpython.exe:."  \
         src/e3sm_quickview/app.py
 
 #--add-binary="$(which pvpython):."  \
