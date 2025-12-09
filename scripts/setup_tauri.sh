@@ -19,9 +19,10 @@ python -m PyInstaller --clean --noconfirm \
         --collect-all paraview \
         --collect-all e3sm_quickview \
         --hidden-import pkgutil \
-        --add-binary="$(which pvpython):."  \
+        --add-binary="C:\Miniconda3\envs\quickview\Library\bin\pvpython:."  \
         src/e3sm_quickview/app.py
 
+#--add-binary="$(which pvpython):."  \
 # Generate trame www + quickview
 python -m trame.tools.www --output ./src-tauri/www
 python -m trame.tools.www --output ./src-tauri/www e3sm_quickview.module
